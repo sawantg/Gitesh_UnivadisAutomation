@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Univadis Automation Assignment" thread-count="3"
+	parallel="tests">
+	<listeners>
+		<listener class-name="com.univadis.listeners.MyCustomListener" />
+		<listener class-name="com.univadis.listeners.AnnotationTransformer" />  
+	</listeners>
+	<test name="Univadis Automation">
+		
+		<classes>
+			<class name="com.univadis.tests.LoginTest" />
+			<class name="com.univadis.tests.SearchArticleTest" />
+			<class name="com.univadis.tests.ArticlePageTest" />
+			<class name="com.univadis.tests.HomePageTest" />
+			
+			
+		</classes>
+
+	</test>
+
+
+</suite>
